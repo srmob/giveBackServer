@@ -1,0 +1,28 @@
+collections
+    user
+    org
+    items
+    
+User:
+    Name: text
+    Contact# :
+    email: 
+    item_catg
+    item_details:
+    item_imgSrc:
+
+
+org :
+    Name:
+    Founded:
+    Desc:
+    Members:
+    Type:
+
+items_need:
+    item_catg:
+    item_need_count:
+    item_name:
+    org_name:
+    item_imgSrc:
+    item_desc:

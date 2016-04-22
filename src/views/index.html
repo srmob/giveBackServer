@@ -1,0 +1,21 @@
+<html ng-app="">
+  <head>
+    <script type="text/javascript"
+      src="lib/js/angular.js">
+    </script>
+    <script type="text/js/javascript"
+      src="lib/js/angular-route.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css" />
+  </head>
+  <body ng-init="names=['A','B']">
+    Om Sriganeshaya Namaha !!
+    
+     <div ng-repeat='name in names'>
+         <ul>
+             {{name}}
+         </ul>
+     </div>
+    <div class="content-wrapper" ng-view></div>
+  </body>
+</html>
