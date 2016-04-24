@@ -3,8 +3,9 @@ var client = mongo.MongoClient;
 var _db;
 
 exports.connect = function(){
-  
-    client.connect('mongodb://localhost:27017/giveback', function(err, db) {
+  var db_connect_url = process.env.MONGODB_URI || mongodb://localhost:27017/giveback
+    //client.connect('mongodb://localhost:27017/giveback', function(err, db) {
+    client.connect(db_connect_url, function(err, db) {
       if(err) {
         console.log("Error connecting to Mongo - check mongod connection");
         process.exit(1);
