@@ -3,7 +3,7 @@ var client = mongo.MongoClient;
 var _db;
 
 exports.connect = function(){
-  var db_connect_url = process.env.MONGODB_URI || mongodb://localhost:27017/giveback
+  var db_connect_url = process.env.MONGODB_URI || 'mongodb://localhost:27017/giveback';
     //client.connect('mongodb://localhost:27017/giveback', function(err, db) {
     client.connect(db_connect_url, function(err, db) {
       if(err) {
